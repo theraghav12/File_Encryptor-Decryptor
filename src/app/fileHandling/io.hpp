@@ -1,22 +1,17 @@
 #ifndef IO_HPP
-#define IO_PP
+#define IO_HPP
 
-#include<fstream>
-#include<string>
-using namespace std;
+#include <fstream>
+#include <string>
 
+class IO {
+public:
+    IO(const std::string& file_path);
+    ~IO();
+    std::fstream& getFileStream();  // <-- Return by reference here also!
 
-class IO{
-    public:
-        IO(const string& file_path);
-        ~IO();
-        fstream getFileStream();
-
-    private:
-        fstream file_stream;
-
-
-
+private:
+    std::fstream file_stream;
 };
 
 #endif

@@ -5,7 +5,7 @@ MAIN_TARGET = encrypt_decrypt
 CRYPTION_TARGET = cryption
 
 MAIN_SRC = main.cpp \
-           src/app/processes/ProcessManagement.cpp \
+           src/app/processes/processManagement.cpp \
            src/app/fileHandling/io.cpp \
            src/app/fileHandling/readenv.cpp \
            src/app/encryptDecrypt/cryption.cpp
